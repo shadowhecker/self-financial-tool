@@ -4,7 +4,11 @@
 #include <string>
 #include <cmath>
 #include <iomanip>
+#include <vector>
 
+using namespace std;
+
+#define WANT_GET 0
 #define CALC_FV 1
 #define CALC_PV 2
 #define CALC_R 3
@@ -22,10 +26,12 @@ void EffectiveAnnualRate(long double &EAR,long double &PeriodicRate,int m);
 int FutureValueOfCashFlow(long double &FV,long double &A,long double &r,long double &N,int CALC_ARGU);
 int PresentValueOfCashFlow(long double &PV,long double &A,long double &r,long double &N,int CALC_ARGU);
 int PresentValueInfiniteEqualCashFlow(long double &PV,long double &A,long double &r,int CALC_ARGU); 
+int NetPresentValueRule(long double &NPV,const vector<long double> &CF,int N,long double &r);//NPV:net present value
 
-
+int InternalRateofReturn(const vector<long double> &CF,long int N,long double &IRR);
 #endif
 
+int MoneyWeightedRateOfReturn(const vector<long double> &CF_OUTFLOW,const vector<long double> &CF_INFLOW,long double &r);
 
 
 

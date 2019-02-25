@@ -2,10 +2,9 @@
 using namespace std;
 int main()
   {
-    long double PV=2126150.77;
-    long double A=20000;
-    long double r=0;
-    long double N=30;
-    FutureValueOfCashFlow(PV,A,r,N,CALC_R);
-    Print(r,6);
+    vector<long double> CF1={200,225,0};
+    vector<long double> CF2={0,5,480};
+    long double IRR=WANT_GET;
+    MoneyWeightedRateOfReturn(CF1,CF2,IRR);
+    Print(IRR);
   }

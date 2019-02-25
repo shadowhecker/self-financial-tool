@@ -1,0 +1,10 @@
+#include "SelfFinancialTool.h"
+
+using namespace std;
+int NetPresentValueRlue(long double &NPV,const vector<long double> &CF,long double &N,long double &r)
+  {
+    int t=0;
+    for(t=0;t<=3;++t)
+      NPV+=CF[t]/pow(1+r,t);
+    return 1;
+  }
