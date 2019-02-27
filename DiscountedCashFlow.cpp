@@ -40,3 +40,25 @@ int MoneyWeightedRateOfReturn(const vector<long double> &CF_OUTFLOW,const vector
     return 1;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
